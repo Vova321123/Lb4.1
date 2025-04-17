@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Електроніка Онлайн</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">LOGO</div>
+    <nav>
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Про нас</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+    <div class="search-cart">
+      <input type="text" placeholder="Пошук..." />
+      <button onclick="showCart()">🛒</button>
+      <span id="cartCount">0</span>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h2>Категорії товарів</h2>
+    <section class="products">
+      <div class="product">
+        📱 Смартфон
+        <button onclick="showProduct('Смартфон')">Деталі</button>
+        <button onclick="addToCart('Смартфон')">До кошика</button>
+      </div>
+      <div class="product">
+        💻 Ноутбук
+        <button onclick="showProduct('Ноутбук')">Деталі</button>
+        <button onclick="addToCart('Ноутбук')">До кошика</button>
+      </div>
+      <div class="product">
+        🎧 Навушники
+        <button onclick="showProduct('Навушники')">Деталі</button>
+        <button onclick="addToCart('Навушники')">До кошика</button>
+      </div>
+      <div class="product">
+        ⌚ Смарт-годинник
+        <button onclick="showProduct('Смарт-годинник')">Деталі</button>
+        <button onclick="addToCart('Смарт-годинник')">До кошика</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Електроніка Онлайн. Усі права захищено.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
